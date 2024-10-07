@@ -192,4 +192,30 @@ sections:
         textAlign: left
       subtitle:
         textAlign: left
+  - colors: colors-f
+    type: TextSection
+    elementId: ''
+    title: 301 redirect
+    text: >-
+      according to this doc: https://docs.netlify.com/routing/redirects/#syntax-for-the-redirects-file you would add the following code to your netlify.toml file
+       `[[redirects]]
+        from = "/netlify/anything"
+        to = " https://www.google.com/search?q=anything"
+        status = 301
+        force = false
+        query = {path = ":path"
+        conditions = {Language = ["en"], Country = ["US"], Role = ["admin"]}`
+    styles:
+      self:
+        height: auto
+        width: wide
+        padding:
+          - pt-24
+          - pb-24
+          - pl-4
+          - pr-4
+      title:
+        textAlign: left
+      subtitle:
+        textAlign: left
 ---
