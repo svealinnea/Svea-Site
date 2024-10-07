@@ -218,4 +218,24 @@ sections:
         textAlign: left
       subtitle:
         textAlign: left
+
+  - colors: colors-f
+    type: TextSection
+    elementId: ''
+    title: Security Incident
+    text: >-
+      First I would try and see if i could replicate the issue, if I couldnt I would reach out to someone who could and tell my manager of the report. In order to show the reporter that we are on top of things I would respond by saying: "Thank you so much for reaching out and sharing this security concern, I have escalated this to the appropriate parties and we are working diligently to solve this, our users and their data is of the utmost priority to us. We will keep you in the loop on our progress towards a resolution." I would escalate this issue to my managers and suggest that we get this information out on a broader channel, whether slack or otherwise in case more reports of the same come in. Also I would recomend that we shut down the portion of the site with the security risk and facilitate an engineer video chat to talk through remediation steps. It is important that we have someone documenting all communication and resolution actions so that we have a clear idea on what went down when we work through a retrospective at some point. I think that if the security threat is real, making sure that none of our users are impacted is of the utmost priority and if that means we need to shut down part of the site, so be it.
+    styles:
+      self:
+        height: auto
+        width: wide
+        padding:
+          - pt-24
+          - pb-24
+          - pl-4
+          - pr-4
+      title:
+        textAlign: left
+      subtitle:
+        textAlign: left
 ---
