@@ -14,12 +14,9 @@ sections:
     colors: colors-f
     backgroundSize: full
     title: >-
-      I’m a developer, digital artist, consultant and a bunch of other
-      impressive titles and buzz words.
+      Welcome to My Netlify Take-Home Project
     subtitle: >-
-      This is my info—I’m sharing it all this with ya’ll to impress you with all
-      the hard work I’ve done in the past few years. Once you’re impressed, you
-      can continue to scroll down to see more details and credentials about me.
+      Below is the answers to the specific questions asked in the prompts
     styles:
       self:
         height: auto
@@ -41,156 +38,158 @@ sections:
         textAlign: left
       subtitle:
         textAlign: left
-      text:
-        textAlign: left
-      actions:
-        justifyContent: flex-start
     type: HeroSection
     actions: []
+
   - colors: colors-f
-    type: FeaturedProjectsSection
+    type: TextSection
     elementId: ''
-    actions:
-      - type: Link
-        label: See all projects
-        url: /projects
-    showDate: false
-    showDescription: true
-    showFeaturedImage: true
-    showReadMoreLink: true
-    variant: variant-b
-    projects:
-      - content/pages/projects/project-two.md
-      - content/pages/projects/project-three.md
-      - content/pages/projects/project-one.md
+    title: How I Built This Site
+    subtitle: >-
+      I used the netlify next.js template to build this site, I was interested in building using this because I have played around with it a little bit but not as much as I would like to. One challenge I came across was that I had a grand idea of tabbing out all the questions so that they would be in the header, but then my daughter woke up from her nap and for the sake of time I decided it would be best to probaby just have everything live on the main page.
     styles:
       self:
         height: auto
         width: wide
-        margin:
-          - mt-0
-          - mb-0
-          - ml-0
-          - mr-0
         padding:
           - pt-24
           - pb-24
           - pl-4
           - pr-4
-        justifyContent: center
       title:
         textAlign: left
       subtitle:
         textAlign: left
-      actions:
-        justifyContent: flex-end
-    subtitle: 'Projects'
-  - type: FeaturedPostsSection
+
+  - colors: colors-f
+    type: TextSection
     elementId: ''
-    colors: colors-f
-    variant: variant-d
-    subtitle: Featured Posts
-    showFeaturedImage: false
-    actions:
-      - type: Link
-        label: See all posts
-        url: /blog
-    posts:
-      - content/pages/blog/post-six.md
-      - content/pages/blog/post-four.md
-      - content/pages/blog/post-three.md
-    showDate: true
-    showExcerpt: true
-    showReadMoreLink: true
+    title: Thoughts on Netlify
+    subtitle: >-
+      For me, deploying the site was seamless, I was able to get it up and running in no time. I really appreciated how on the overview page on netlify there is a section called Set up your site, I like how that section walks you through all the neccesary next steps like setting up a custom domain and securing your site with HTTPS. I would also eventually love to explore the logs and site analytics at some point but obviously that is not in the cards for this exercise.
     styles:
       self:
         height: auto
-        width: narrow
-        margin:
-          - mt-0
-          - mb-0
-          - ml-0
-          - mr-0
+        width: wide
         padding:
-          - pt-28
-          - pb-48
+          - pt-24
+          - pb-24
           - pl-4
           - pr-4
-        justifyContent: center
-        borderRadius: none
-        borderWidth: 0
-        borderStyle: none
-        borderColor: border-dark
       title:
         textAlign: left
       subtitle:
         textAlign: left
-      actions:
-        justifyContent: flex-end
-  - type: ContactSection
-    colors: colors-f
-    backgroundSize: full
-    title: "Got an interesting project? Tell me more...\U0001F4AC"
-    form:
-      type: FormBlock
-      elementId: sign-up-form
-      fields:
-        - name: firstName
-          label: First Name
-          hideLabel: true
-          placeholder: First Name
-          isRequired: true
-          width: 1/2
-          type: TextFormControl
-        - name: lastName
-          label: Last Name
-          hideLabel: true
-          placeholder: Last Name
-          isRequired: false
-          width: 1/2
-          type: TextFormControl
-        - name: email
-          label: Email
-          hideLabel: true
-          placeholder: Email
-          isRequired: true
-          width: 1/2
-          type: EmailFormControl
-        - name: address
-          label: Address
-          hideLabel: true
-          placeholder: Address
-          isRequired: true
-          width: 1/2
-          type: TextFormControl
-        - name: updatesConsent
-          label: Sign me up to recieve updates
-          isRequired: false
-          width: full
-          type: CheckboxFormControl
-      submitLabel: "Submit \U0001F680"
-      styles:
-        submitLabel:
-          textAlign: center
+
+  - colors: colors-f
+    type: TextSection
+    elementId: ''
+    title: 5 favorite and 5 least favorite Activities
+    text: >-
+      Favorites:
+      1. Develop a code example to share with a customer
+      2. Dig through server logs to troubleshoot a customer's website behavior
+      3. Suggest and champion improvements to the Support team's workflow
+      4. Help train and onboard new support teammates
+      5. Submit bug reports and potentially bug fixes
+
+      Least Favorite:
+      1. Engage multiple users at once via chat to answer their questions and troubleshoot problems
+      2. Respond to Netlify customers on Twitter
+      3. Work with a customer to figure out if Netlify's service can solve a particular workflow or integration challenge they have
+      4. Work with prospective customers to explain our service and the pricing model
+      5. Help manage communications during a service outage
     styles:
       self:
         height: auto
-        width: narrow
-        margin:
-          - mt-0
-          - mb-0
-          - ml-0
-          - mr-0
+        width: wide
         padding:
           - pt-24
           - pb-24
-          - pr-4
           - pl-4
-        alignItems: center
-        justifyContent: center
-        flexDirection: row
+          - pr-4
       title:
         textAlign: left
-      text:
+      subtitle:
+        textAlign: left
+
+  - colors: colors-f
+    type: TextSection
+    elementId: ''
+    title: Documentation Example
+    text: >-
+      I recommend the Smart Car API https://smartcar.com/docs/api-reference/intro for its ease of use and the features that it provides, not only can you use this to lock, unlock a car but you can also use it to check out the charging behavior of the car and the odometer or even tire pressure. I have implemented this in the past and the docs are so well written and the support team is readily available that if someone wanted to create a custom app to lock and unlock their car if they forgot their keys somewhere or wanted to remotely check in on their tire pressure this is a great resource to do so!
+    styles:
+      self:
+        height: auto
+        width: wide
+        padding:
+          - pt-24
+          - pb-24
+          - pl-4
+          - pr-4
+      title:
+        textAlign: left
+      subtitle:
+        textAlign: left
+
+  - colors: colors-f
+    type: TextSection
+    elementId: ''
+    title: DNS Configuration Challenges
+    subtitle: >-
+      Two major challenges for less-technical customers are honestly just the unfamiliaroty of it all, when you are changing DNS records in Wix or another platform reading the instructions can feel overwhelming because of all of the technical jargon but the beauty of it is that once you get through the steps its really just a matter of copying and pasting the needed changes. I really do think for less technical folks it is just the unkown. I remember having to teach my husband this and once he realized how it really it just copying and pasting he felt much more confident that he could do it on his own in the future, Another challenge I think is the time it can take to update the records. When working with DNS configurations it can take awhile to see those updates and for someone who is unfamiliar that can probably feel a bit overwhelming and they may give up or think something is wrong when the process is just not quite finished.
+    styles:
+      self:
+        height: auto
+        width: wide
+        padding:
+          - pt-24
+          - pb-24
+          - pl-4
+          - pr-4
+      title:
+        textAlign: left
+      subtitle:
+        textAlign: left
+
+  - colors: colors-f
+    type: TextSection
+    elementId: ''
+    title: Troubleshooting Customer Issue
+    subtitle: >-
+      First I would look through slack, netlify docs or other resources at my disposal for that particular error code ( Build failed due to a user error: Build script returned non-zero exit code:) to see how we have resolved this issue for customers in the past by looking at old tickets, etc. If that did not produce anything valuable or help me figure out my next steps I would probaby reach out to the customer and maybe ask them what changes they have made that caused the site not to build, had the site been built in the past? I want to see if this is an issue where the user has never been able to get their site to build on netlify or if it possibly has to do with a breaking change that they have made recently.
+    styles:
+      self:
+        height: auto
+        width: wide
+        padding:
+          - pt-24
+          - pb-24
+          - pl-4
+          - pr-4
+      title:
+        textAlign: left
+      subtitle:
+        textAlign: left
+
+  - colors: colors-f
+    type: TextSection
+    elementId: ''
+    title: Customer Response
+    text: >-
+      Thank you for reaching out and letting me know about the issue with your site not building. I completely understand how frustrating it can be when things aren’t working as expected, and I’m here to help! I noticed from the build logs that there was an error indicating a "user error" with a non-zero exit code: 2. This usually points to a problem with the configuration. Since your repository is private, I can’t look directly at the code, but I’d love to work with you to figure this out. Could you share if you made any recent changes to your project? I’m also happy to provide resources or documentation that might assist you as you troubleshoot this. Please don’t hesitate to reach out if you have any questions or need more support—I’m here for you!
+    styles:
+      self:
+        height: auto
+        width: wide
+        padding:
+          - pt-24
+          - pb-24
+          - pl-4
+          - pr-4
+      title:
+        textAlign: left
+      subtitle:
         textAlign: left
 ---
