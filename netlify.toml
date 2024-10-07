@@ -4,3 +4,9 @@
 
 [[plugins]]
   package = "@netlify/plugin-nextjs"
+
+[[redirects]]
+  from = "/netlify/:anything"
+  to = "https://www.google.com/search?q=:anything"
+  status = 200
+  force = true 
